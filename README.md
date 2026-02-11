@@ -652,7 +652,7 @@ Special thanks to the open-source community for these amazing technologies:
 - 👤 **Developer**: Norvin Samson Anthony
 - 🐛 **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/loan-underwriting-system/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/loan-underwriting-system/discussions)
-- 📧 **Email**: Replace with your email
+- 📧 **Email**: norvinanthony@gmail.com 
 
 ---
 
