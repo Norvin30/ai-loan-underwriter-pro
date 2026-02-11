@@ -53,7 +53,7 @@ This enhanced version includes significant improvements and new features:
 ## 📸 Screenshots
 
 ### Application Submission
-![Application Submission](screenshots/application_submission.png)
+![Application Submission](screenshots/submit_application.png)
 
 ### AI Analysis & Review
 ![AI Review](screenshots/ai_review_details.png)
@@ -61,7 +61,7 @@ This enhanced version includes significant improvements and new features:
 ![AI Review](screenshots/ai_review_income.png)
 
 ### Workflow Dashboard
-![Workflow Dashboard](screenshots/workflow_dashboard.png)
+![Workflow Dashboard](screenshots/all_workflows.png)
 
 ---
 
