@@ -1,0 +1,451 @@
+{
+  "uuid": "6ee640da-b909-4bc1-98c9-0fc171b7ccc8",
+  "lastMigration": 33,
+  "name": "bankAPI (copy)",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3233,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "4a0a9222-dea7-4882-8e1f-6d797324d444",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "bank",
+      "responses": [
+        {
+          "uuid": "f19cb013-ba24-44c3-a2f4-e08845ef0bb2",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"accounts\": [\n    {\n      \"type\": \"checking\",\n      \"balance\": 40000,\n      \"account_number\": \"****1234\",\n      \"transactions_count\": 150\n    },\n    {\n      \"type\": \"savings\",\n      \"balance\": 15000,\n      \"account_number\": \"****5678\",\n      \"transactions_count\": 45\n    }\n  ],\n  \"total_balance\": 55000,\n  \"bank_name\": \"First National Bank\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "4ff70814-000c-43d6-9eb2-141a142954ea",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"accounts\": [\n    {\n      \"type\": \"checking\",\n      \"balance\": 27500,\n      \"account_number\": \"****9812\",\n      \"transactions_count\": 98\n    },\n    {\n      \"type\": \"savings\",\n      \"balance\": 32500,\n      \"account_number\": \"****4420\",\n      \"transactions_count\": 60\n    },\n    {\n      \"type\": \"credit\",\n      \"balance\": -2500,\n      \"account_number\": \"****8899\",\n      \"transactions_count\": 22\n    }\n  ],\n  \"total_balance\": 57500,\n  \"bank_name\": \"Continental Trust Bank\"\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "1e27b5dd-7784-4969-b1c4-6bfb7acff6f0",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"accounts\": [\n    {\n      \"type\": \"checking\",\n      \"balance\": 9200,\n      \"account_number\": \"****7890\",\n      \"transactions_count\": 120\n    },\n    {\n      \"type\": \"savings\",\n      \"balance\": 51000,\n      \"account_number\": \"****3345\",\n      \"transactions_count\": 18\n    },\n    {\n      \"type\": \"money_market\",\n      \"balance\": 25000,\n      \"account_number\": \"****1122\",\n      \"transactions_count\": 9\n    }\n  ],\n  \"total_balance\": 85200,\n  \"bank_name\": \"Evergreen Financial Bank\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "3190bdc3-55d2-4b91-ab68-9c79e34953f0",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"accounts\": [\n    {\n      \"type\": \"checking\",\n      \"balance\": 40200,\n      \"account_number\": \"****9087\",\n      \"transactions_count\": 210\n    },\n    {\n      \"type\": \"savings\",\n      \"balance\": 15500,\n      \"account_number\": \"****6732\",\n      \"transactions_count\": 52\n    }\n  ],\n  \"total_balance\": 55700,\n  \"bank_name\": \"Highland Community Bank\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "fa7081d3-b065-4e4f-a201-0cb085e7a0c5",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"accounts\": [\n    {\n      \"type\": \"checking\",\n      \"balance\": 3000,\n      \"account_number\": \"****2719\",\n      \"transactions_count\": 45\n    },\n    {\n      \"type\": \"savings\",\n      \"balance\": 7200,\n      \"account_number\": \"****8820\",\n      \"transactions_count\": 12\n    },\n    {\n      \"type\": \"investment\",\n      \"balance\": 15000,\n      \"account_number\": \"****6655\",\n      \"transactions_count\": 8\n    }\n  ],\n  \"total_balance\": 25200,\n  \"bank_name\": \"Metro Capital Bank\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "RANDOM",
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "6aaa23a9-e730-451c-b040-64adaaa61d21",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cibil",
+      "responses": [
+        {
+          "uuid": "347b32ab-c2ab-42e3-8104-43fb5fb8773c",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 700,\n  \"provider\": \"CIBIL\",\n  \"report_date\": \"2025-10-01\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"good\",\n      \"balance\": 2500\n    },\n    {\n      \"account_type\": \"auto_loan\",\n      \"payment_history\": \"fair\",\n      \"balance\": 18000\n    }\n  ],\n  \"inquiries\": 3,\n  \"delinquencies\": 1\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "796c77af-0b94-4fa5-898b-d309252244a9",
+          "body": "{\n  error:\"Rate limited\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "0ef5ceff-8f42-4f56-8387-78485b284a0e",
+          "body": "{\n  error:\"Rate limited\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "6d0812a6-124b-437c-bd9c-99f7e595055a",
+          "body": "{\n  error:\"Rate limited\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "4d8def79-7e8f-4891-8a64-cc251dc12536",
+          "body": "{\n  error:\"Rate limited\"\n}",
+          "latency": 0,
+          "statusCode": 500,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "2ca51815-5749-4e14-b5bc-7e39cea5de04",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "experian",
+      "responses": [
+        {
+          "uuid": "96b26797-188e-491a-ab83-be34107aae7b",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 720,\n  \"provider\": \"Experian\",\n  \"report_date\": \"2025-10-01\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 1500\n    },\n    {\n      \"account_type\": \"mortgage\",\n      \"payment_history\": \"good\",\n      \"balance\": 250000\n    },\n    {\n      \"account_type\": \"personal_loan\",\n      \"payment_history\": \"good\",\n      \"balance\": 5000\n    }\n  ],\n  \"inquiries\": 2,\n  \"delinquencies\": 0\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "d7a8c5f3-f13f-4bae-94fa-cc16efbd4701",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 685,\n  \"provider\": \"Equifax\",\n  \"report_date\": \"2025-09-20\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"good\",\n      \"balance\": 3200\n    },\n    {\n      \"account_type\": \"auto_loan\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 18000\n    },\n    {\n      \"account_type\": \"student_loan\",\n      \"payment_history\": \"good\",\n      \"balance\": 15000\n    }\n  ],\n  \"inquiries\": 3,\n  \"delinquencies\": 1\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "f1215fc2-ecb0-4bc2-b0c7-65feccdfbf28",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 755,\n  \"provider\": \"TransUnion\",\n  \"report_date\": \"2025-10-03\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 1200\n    },\n    {\n      \"account_type\": \"mortgage\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 230000\n    },\n    {\n      \"account_type\": \"auto_loan\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 9000\n    }\n  ],\n  \"inquiries\": 1,\n  \"delinquencies\": 0\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "67315636-f828-430f-b71a-5e2ea847355b",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 640,\n  \"provider\": \"Experian\",\n  \"report_date\": \"2025-09-15\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"fair\",\n      \"balance\": 4200\n    },\n    {\n      \"account_type\": \"personal_loan\",\n      \"payment_history\": \"late_once\",\n      \"balance\": 8000\n    },\n    {\n      \"account_type\": \"auto_loan\",\n      \"payment_history\": \"good\",\n      \"balance\": 12000\n    }\n  ],\n  \"inquiries\": 4,\n  \"delinquencies\": 2\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "12bc48d2-a540-46d4-8161-82ce49dcbc33",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 798,\n  \"provider\": \"Experian\",\n  \"report_date\": \"2025-10-06\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 500\n    },\n    {\n      \"account_type\": \"mortgage\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 200000\n    },\n    {\n      \"account_type\": \"home_equity_loan\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 15000\n    }\n  ],\n  \"inquiries\": 0,\n  \"delinquencies\": 0\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "150c41be-239f-49c1-9355-c76535e5b847",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"score\": 702,\n  \"provider\": \"TransUnion\",\n  \"report_date\": \"2025-09-28\",\n  \"history\": [\n    {\n      \"account_type\": \"credit_card\",\n      \"payment_history\": \"good\",\n      \"balance\": 2700\n    },\n    {\n      \"account_type\": \"personal_loan\",\n      \"payment_history\": \"excellent\",\n      \"balance\": 3000\n    },\n    {\n      \"account_type\": \"mortgage\",\n      \"payment_history\": \"good\",\n      \"balance\": 210000\n    }\n  ],\n  \"inquiries\": 2,\n  \"delinquencies\": 0\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "RANDOM",
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "607c515e-083d-4e41-82cb-5c542128e234",
+      "type": "http",
+      "documentation": "Fetch applicant documents",
+      "method": "get",
+      "endpoint": "documents",
+      "responses": [
+        {
+          "uuid": "ea2cc087-c185-4688-9eb5-b3b169f88acf",
+          "body": "{\n  \"applicant_id\": \"{{queryParam 'applicant_id'}}\",\n  \"documents\": [\n    {\n      \"type\": \"government_id\",\n      \"name\": \"drivers_license.pdf\",\n      \"verified\": true,\n      \"url\": \"s3://bucket/docs/drivers_license.pdf\"\n    },\n    {\n      \"type\": \"proof_of_income\",\n      \"name\": \"paystub_recent.pdf\",\n      \"verified\": true,\n      \"url\": \"s3://bucket/docs/paystub_recent.pdf\"\n    },\n    {\n      \"type\": \"proof_of_address\",\n      \"name\": \"utility_bill.pdf\",\n      \"verified\": true,\n      \"url\": \"s3://bucket/docs/utility_bill.pdf\"\n    }\n  ],\n  \"total_documents\": 3,\n  \"verification_status\": \"complete\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4a0a9222-dea7-4882-8e1f-6d797324d444"
+    },
+    {
+      "type": "route",
+      "uuid": "6aaa23a9-e730-451c-b040-64adaaa61d21"
+    },
+    {
+      "type": "route",
+      "uuid": "2ca51815-5749-4e14-b5bc-7e39cea5de04"
+    },
+    {
+      "type": "route",
+      "uuid": "607c515e-083d-4e41-82cb-5c542128e234"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
