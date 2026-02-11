@@ -48,7 +48,6 @@ This enhanced version includes significant improvements and new features:
 - 🔧 **Better Error Handling**: Explicit .env loading for reliable AWS credential management
 - 📝 **Comprehensive Documentation**: 10+ test scenarios and detailed guides
 
-## 📸 Screenshots
 
 ## 📸 Screenshots
 
