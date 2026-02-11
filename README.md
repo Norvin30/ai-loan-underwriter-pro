@@ -50,14 +50,18 @@ This enhanced version includes significant improvements and new features:
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### Application Submission
-![Submit Application](https://via.placeholder.com/800x400/4A90E2/FFFFFF?text=Submit+Loan+Application)
+![Application Submission](screenshots/application_submission.png)
 
 ### AI Analysis & Review
-![Review Workflow](https://via.placeholder.com/800x400/50C878/FFFFFF?text=AI+Analysis+%26+Review)
+![AI Review](screenshots/ai_review_details.png)
+![AI Review](screenshots/ai_review_expense.png)
+![AI Review](screenshots/ai_review_income.png)
 
 ### Workflow Dashboard
-![Workflows List](https://via.placeholder.com/800x400/9B59B6/FFFFFF?text=All+Workflows+Dashboard)
+![Workflow Dashboard](screenshots/workflow_dashboard.png)
 
 ---
 
